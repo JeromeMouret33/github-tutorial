@@ -1,3 +1,23 @@
 - Delete file: 
 	- Delete file locally  
 	- git rm <file name>
+
+
+
+- git pull/fetch:
+	La commande git pull est en fait la commande qui regroupe les commandes git fetch suivie de git merge.
+	Cette commande télécharge les données des commits qui n'ont pas encore été récupérées dans votre branche 
+	locale puis fusionne ensuite ces données.
+
+	Le choix de la commande à utiliser dépend de la façon dont vous souhaitez travailler. 
+	La commande git pull automatise la mise à jour des données mais peut entraîner de nombreux 
+	conflits si vous avez modifié beaucoup de fichiers. Utiliser la commande git fetch permet de 
+	garder son répertoire de travail à jour et de contrôler le moment où l'on souhaite fusionner 
+	les données.
+
+
+- Les branches:
+	- Visualiser toutes les branches: git branches
+	- Se deplacer de branches en branches: git checkout <branch_name> 
+	- Créer une nouvelle branche (la deuxieme commande crée une nouvelle branche et nous positionne dedans): git branche <new_branch> / git checkout -b <new_branch>
+
