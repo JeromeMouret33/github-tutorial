@@ -34,5 +34,11 @@ A simple tutorial for beginners (start from scratch on github)
 	- Create a "README.txt" in "MyProject" directory and write some text "ex : vim README.txt"
 	- To check the presence of the file "README.txt" type -> git status 
 	- "README.txt" will appear in red and as untracked, this means that git ignores it for now.
-	- To tell Git that the file is there, type -> git add README.tx
+	- To tell Git that the file is there, type -> git add README.txt
 	- To take a "snapshot" of the project type -> git commit -m "Add README.txt"
+
+5.Connect your local repository to your GitHub repository and push
+
+	- type -> git remote add origin https://github.com/nomutilisateur/MonProjet.git
+	- To confirm type -> git remote -v
+	- to push type -> git push -u origin master 
