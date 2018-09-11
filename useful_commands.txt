@@ -21,3 +21,7 @@
 	- Se deplacer de branches en branches: git checkout <branch_name> 
 	- Créer une nouvelle branche (la deuxieme commande crée une nouvelle branche et nous positionne dedans): git branche <new_branch> / git checkout -b <new_branch>
 
+
+- Naviger entre commit:
+	- Pour decider sur quel commit aller: git log 
+	- git checkout <Sha1Commit>
