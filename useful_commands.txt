@@ -25,3 +25,6 @@
 - Naviger entre commit:
 	- Pour decider sur quel commit aller: git log 
 	- git checkout <Sha1Commit>
+
+
+git log --graph --left-right --cherry-pick --oneline master
