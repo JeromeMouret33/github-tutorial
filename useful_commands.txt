@@ -38,7 +38,7 @@
 
 	- git add <directory>
 
-	- git add -A
+	- git add -A or git .
 	  Add all the files.
 
 	- git add -p 
@@ -63,18 +63,39 @@
 	  Change the previously commit.
 
 
+- git diff:--------------------------------------------------------------------------------------------------------------------------------
 
 
+- git stash:-------------------------------------------------------------------------------------------------------------------------------
+	- git stash
+	
+	- git stash save "comment"
+	
+	- git stash pop
+	  Reapply previously stashed changes
+	
+	- git stash pop stash@{id_stash}
 
+	- git stash apply 
+	  Reapply the changes to your working copy and keep them in your stash 
+	
+	- git stash -u(untracked file) -a(all)
 
+	- git stash list 
+	
+	- git stash show "-p(show full diff)"
+	  Show stash summary
 
+	- git stash -p
+	  Iterate through each changed "hunk" in your working copy and ask whether you wish to stash it
 
+	- git stash branch <new_branch_name> stash@{id_stash}
+	  This checks out a new branch based on the commit that you created your stash from, and then pops your stashed changes onto it
 
+	- git stash drop stash@{id_stash}
 
-
-
-
-
+	- git stash clear
+	  Delete all of your stashes
 
 
 - git rm:----------------------------------------------------------------------------------------------------------------------------------  
