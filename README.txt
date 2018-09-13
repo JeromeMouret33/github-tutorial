@@ -29,13 +29,13 @@ A simple tutorial for beginners (start from scratch on github)
 	- This will tell your computer that this directory is a git directory.
 
 
-4.Commit and push fisrt file 
+4.Commit first file 
 
 	- Create a "README.txt" in "MyProject" directory and write some text "ex : vim README.txt"
 	- To check the presence of the file "README.txt" type -> git status 
-	- "README.txt" will appear in red and as untracked, this means that git ignores it for now.
+	- "README.txt" will appear in red as an untracked file, this means that git ignores it for now.
 	- To tell Git that the file is there, type -> git add README.txt
-	- To take a "snapshot" of the project type -> git commit -m "Add README.txt"
+	- To take a "snapshot" of the project type -> git commit -m "your comment"
 
 5.Connect your local repository to your GitHub repository and push
 
