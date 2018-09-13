@@ -119,6 +119,9 @@ Here you will find the most used commands with git, if you start this file is no
 - git log:---------------------------------------------------------------------------------------------------------------------------------
 	- git log
 
+	- git log --oneline
+	  oneline history
+
 	- git log -n <limit>
 	  Limit the number of commits by <limit>.
 
@@ -146,6 +149,16 @@ Here you will find the most used commands with git, if you start this file is no
 
 	- git log --graph --decorate --oneline
 	  Graphical commits representation. 
+
+
+- git checkout:----------------------------------------------------------------------------------------------------------------------------
+	- git checkout <branch>
+	  Go to <branch> branch. 
+	
+	- git checkout <a1e8fb5>
+	  Go to <a1e8fb5> commit 
+
+	- git checkout -b <new_branch>
 
 
 - git tag:---------------------------------------------------------------------------------------------------------------------------------
