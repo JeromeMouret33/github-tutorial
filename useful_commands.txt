@@ -126,4 +126,5 @@
 	- git checkout <Sha1Commit>
 
 
-git log --graph --left-right --cherry-pick --oneline master
+git log --graph --left-right --cherry-pick --oneline master 
+$
