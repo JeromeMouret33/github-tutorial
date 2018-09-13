@@ -4,6 +4,10 @@
 #																	  #
 ###########################################################################################################################################
 
+
+Here you will find the most used commands with git, if you start this file is not for you, you will first need to learn about the basics.
+(https://www.atlassian.com/git/tutorials/what-is-git)
+
 - git init:--------------------------------------------------------------------------------------------------------------------------------
 	- git init
 
@@ -46,13 +50,17 @@
 	  This will present you with a chunk of changes and prompt you for a command. 
 	  Use y to stage the chunk, n to ignore the chunk, s to split it into smaller chunks, e to manually edit the chunk, and q to exit.
 
+	- git add -f <your_file>
+	  Add and commit an ignored file by .gitignore.
+
 
 - git commit:------------------------------------------------------------------------------------------------------------------------------
 	- git commit 
 	  Launch a text editor prompting you for a commit message.
 
 	- git commit -a
-	  Commit a snapshot of all changes in the working directory.
+	  Commit a snapshot of all changes in the working directory. This only includes modifications to tracked files 
+	  (those that have been added with git add at some point in their history).
 
 	- git commit -m "commit message"
 
@@ -64,20 +72,22 @@
 
 
 - git diff:--------------------------------------------------------------------------------------------------------------------------------
+	- Coming soon
 
 
 - git stash:-------------------------------------------------------------------------------------------------------------------------------
 	- git stash
 	
 	- git stash save "comment"
+	  Add a comment with the stash.
 	
 	- git stash pop
-	  Reapply previously stashed changes
+	  Reapply previously stashed changes.
 	
 	- git stash pop stash@{id_stash}
 
 	- git stash apply 
-	  Reapply the changes to your working copy and keep them in your stash 
+	  Reapply the changes to your working copy and keep them in your stash.
 	
 	- git stash -u(untracked file) -a(all)
 
@@ -87,20 +97,70 @@
 	  Show stash summary
 
 	- git stash -p
-	  Iterate through each changed "hunk" in your working copy and ask whether you wish to stash it
+	  Iterate through each changed "hunk" in your working copy and ask whether you wish to stash it.
 
 	- git stash branch <new_branch_name> stash@{id_stash}
-	  This checks out a new branch based on the commit that you created your stash from, and then pops your stashed changes onto it
+	  This checks out a new branch based on the commit that you created your stash from, and then pops your stashed changes onto it.
 
 	- git stash drop stash@{id_stash}
 
 	- git stash clear
-	  Delete all of your stashes
+	  Delete all of your stashes.
 
+
+- git .gitignore:--------------------------------------------------------------------------------------------------------------------------
+	- Comming soon
+
+
+- git status:------------------------------------------------------------------------------------------------------------------------------
+	- Nothing very hard to know about this command. List which files are staged, unstaged, and untracked.
+
+
+- git log:---------------------------------------------------------------------------------------------------------------------------------
+	- git log
+
+	- git log -n <limit>
+	  Limit the number of commits by <limit>.
+
+	- git log --oneline
+	  Condense each commit to a single line.
+
+	- git log --stat
+	  Along with the ordinary git log information, include which files were altered and the relative number of lines that were added or
+	  deleted from each of them.
+
+	- git log -p
+	  This shows the full diff of each commit.
+
+	- git log --author="<pattern>"
+	  Search for commits by a particular author.
+
+	- git log --grep="<pattern>"
+	  Search for commits with a commit message.
+
+	- git log <since>..<until>
+	  Show only commits that occur between <since> and <until>. 
+
+	- git log <file>
+	  Only display commits that include the specified file.
+
+	- git log --graph --decorate --oneline
+	  Graphical commits representation. 
+
+
+- git tag:---------------------------------------------------------------------------------------------------------------------------------
+	- Comming soon
+
+
+- git blame:-------------------------------------------------------------------------------------------------------------------------------
+	- Comming soon
 
 - git rm:----------------------------------------------------------------------------------------------------------------------------------  
-	- git rm <file name>
+	- git rm <your_file>
 	  Delete file locally
+	
+	- git rm --cached <your_file>
+	  Ignore a file that you've committed in the past. The file will be deleted from your repository, but will remain in your working directory as an ignored file.
 
 
 - git pull/fetch:--------------------------------------------------------------------------------------------------------------------------
