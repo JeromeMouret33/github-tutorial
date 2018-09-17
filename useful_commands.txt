@@ -172,7 +172,7 @@ Here you will find the most used commands with git, if you start this file is no
 	- git rm <your_file>
 	  Delete file locally
 	
-	- git rm --cached <your_file>
+	- git rm --cached <your_file> (-r option for delete some directories)
 	  Ignore a file that you've committed in the past. The file will be deleted from your repository, but will remain in your working directory as an ignored file.
 
 
