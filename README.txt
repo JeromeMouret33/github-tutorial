@@ -41,4 +41,6 @@ A simple tutorial for beginners (start from scratch on github)
 
 	- type -> git remote add origin https://github.com/nomutilisateur/MonProjet.git
 	- To confirm type -> git remote -v
+	- git add *
+	- git commit -am "initial commit"
 	- to push type -> git push -u origin master 
