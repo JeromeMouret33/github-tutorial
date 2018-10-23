@@ -178,21 +178,24 @@ Here you will find the most used commands with git, if you start this file is no
 
 - git pull/fetch:--------------------------------------------------------------------------------------------------------------------------
 	La commande git pull est en fait la commande qui regroupe les commandes git fetch suivie de git merge.
-	Cette commande télécharge les données des commits qui n'ont pas encore été récupérées dans votre branche 
-	locale puis fusionne ensuite ces données.
+	Cette commande tÃ©lÃ©charge les donnÃ©es des commits qui n'ont pas encore Ã©tÃ© rÃ©cupÃ©rÃ©es dans votre branche 
+	locale puis fusionne ensuite ces donnÃ©es.
 
-	Le choix de la commande à utiliser dépend de la façon dont vous souhaitez travailler. 
-	La commande git pull automatise la mise à jour des données mais peut entraîner de nombreux 
-	conflits si vous avez modifié beaucoup de fichiers. Utiliser la commande git fetch permet de 
-	garder son répertoire de travail à jour et de contrôler le moment où l'on souhaite fusionner 
-	les données.
+	Le choix de la commande Ã  utiliser dÃ©pend de la faÃ§on dont vous souhaitez travailler. 
+	La commande git pull automatise la mise Ã  jour des donnÃ©es mais peut entraÃ®ner de nombreux 
+	conflits si vous avez modifiÃ© beaucoup de fichiers. Utiliser la commande git fetch permet de 
+	garder son rÃ©pertoire de travail Ã  jour et de contrÃ´ler le moment oÃ¹ l'on souhaite fusionner 
+	les donnÃ©es.
 
 
 - Les branches:
 	- Visualiser toutes les branches: git branches
 	- Se deplacer de branches en branches: git checkout <branch_name> 
-	- Créer une nouvelle branche (la deuxieme commande crée une nouvelle branche et nous positionne dedans): git branche <new_branch> / git checkout -b <new_branch>
-
+	- CrÃ©er une nouvelle branche (la deuxieme commande crÃ©e une nouvelle branche et nous positionne dedans): git branche <new_branch> / git checkout -b <new_branch>
+	- git branch -d [branch_name]   -> delete local branch 
+	- git push origin [branch_name]  -> delete remote branch 
+	- git fetch --all --prune  -> synchro delete branch 
+ 
 
 - Naviger entre commit:
 	- Pour decider sur quel commit aller: git log 
